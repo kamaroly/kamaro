@@ -1,0 +1,26 @@
+{
+    "name": "kamaro/settings",
+    "description": "Settings package for kpos 3",
+    "license" : "MIT",
+    "authors": [
+        {
+            "name": "Kamaro",
+            "email": "kamaroly@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/models",
+            "src/controllers"
+        ],
+        "psr-0": {
+            "Kamaro\\Settings\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
