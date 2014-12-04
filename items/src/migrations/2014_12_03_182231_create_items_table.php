@@ -21,7 +21,7 @@ class CreateItemsTable extends Migration {
             $table->increments('id');
             $table->string('name');
             $table->string('category');
-            $table->integer('supplier_id')->unsigned();
+            $table->integer('supplier_id')->length(10)->unsigned()->default(0);
             $table->string('item_number');
             $table->string('description');
             $table->decimal('cost_price',15,2)->default(0.00);

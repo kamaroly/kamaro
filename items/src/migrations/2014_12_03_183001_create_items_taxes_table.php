@@ -20,10 +20,10 @@ class CreateItemsTaxesTable extends Migration {
         {
             $table->engine = 'InnoDB';
             
-            $table->integer('item_id')->unsigned();
+            $table->integer('item_id')->length(10)->unsigned();
             $table->string('name');
             $table->string('percent');
-            $table->integer('location_id')->unsigned();
+            $table->integer('location_id')->length(10)->unsigned();
 
             $table->timestamps();
         });

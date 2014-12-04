@@ -18,12 +18,11 @@ class CreateInventoryTable extends Migration {
         {
             $table->engine = 'InnoDB';
             
-            $table->increments('trans_id');
-            $table->integer('trans_items')->default(0);
+            $table->increments('id');
+            $table->integer('trans_items',false,10);
             $table->integer('trans_user')->default(0);
             $table->text('trans_comment');
             $table->integer('trans_location');
-            $table->integer('trans_inventory')->default(0);
 
             $table->timestamps();
         });

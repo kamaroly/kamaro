@@ -25,7 +25,7 @@ class CreatePeopleTable extends Migration {
             $table->string('phone_number');
             $table->string('email');
             $table->string('address_1');
-            $table->string('address_1');
+            $table->string('address_2');
             $table->string('city');
             $table->string('state');
             $table->string('zip');

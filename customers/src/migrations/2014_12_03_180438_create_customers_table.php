@@ -18,7 +18,7 @@ class CreateCustomersTable extends Migration {
         {
             $table->engine = 'InnoDB';
             
-            $table->integer('person_id');
+            $table->integer('person_id',10)->unsigned();
             $table->string('account_number');
             $table->boolean('taxable')->default(1);
 

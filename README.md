@@ -16,3 +16,17 @@ Documentation for the entire system can be found on the [Kamaro Lambert Website]
 ### LICENCE
 The Kamaro Point of Sale software is licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
+
+ 
+php artisan migrate --bench="kamaro/customers"  
+php artisan migrate --bench="kamaro/item-kits"
+php artisan migrate --bench="kamaro/items"  
+php artisan migrate --bench="kamaro/locations"
+php artisan migrate --bench="kamaro/people" 
+php artisan migrate --bench="kamaro/receivings" 
+php artisan migrate --bench="kamaro/reports"  
+php artisan migrate --bench="kamaro/sales" 
+php artisan migrate --bench="kamaro/settings"
+php artisan migrate --bench="kamaro/suppliers"
+php artisan migrate --bench="kamaro/contracts" 
+

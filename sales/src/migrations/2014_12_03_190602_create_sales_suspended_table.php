@@ -18,10 +18,10 @@ class CreateSalesSuspendedTable extends Migration {
         {
             $table->engine = 'InnoDB';
             
-            $table->integer('customer_id',10)->nullable();
+            $table->integer('customer_id')->length(10)->unsigned()->nullable();
             $table->integer('user_id')->unsigned();
             $table->string('comment');
-            $table->integer('sale_id');
+            $table->integer('sale_id')->length(10)->unsigned()->nullable();
             $table->string('payment_type');
 
             $table->timestamps();

@@ -19,8 +19,8 @@ class CreateItemQuantitiesTable extends Migration {
         {
             $table->engine = 'InnoDB';
             
-            $table->integer('item_id')->unsigned();
-            $table->integer('location_id')->unsigned();
+            $table->integer('item_id')->length(10)->unsigned();
+            $table->integer('location_id')->length(10)->unsigned();
             $table->decimal('quantity',15,2);
 
             $table->timestamps();

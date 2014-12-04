@@ -18,8 +18,8 @@ class CreateItemkitItemsTable extends Migration {
         {
             $table->engine = 'InnoDB';
             
-            $table->integer('item_kit_id');
-            $table->integer('item_id');
+            $table->integer('item_kit_id')->length(10)->unsigned();
+            $table->integer('item_id')->length(10)->unsigned();
             $table->decimal('quantity');
             $table->boolean('user_id');
             

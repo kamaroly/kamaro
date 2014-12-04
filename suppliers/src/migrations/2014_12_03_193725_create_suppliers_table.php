@@ -18,7 +18,7 @@ class CreateSuppliersTable extends Migration {
         Schema::create('suppliers', function ($table)
         {
             $table->engine = 'InnoDB';
-            $table->integer('person_id');
+            $table->integer('person_id',10)->unsigned();
             $table->string('company_name');
             $table->string('account_number');
 

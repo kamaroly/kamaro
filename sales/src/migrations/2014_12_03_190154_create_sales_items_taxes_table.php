@@ -19,8 +19,8 @@ class CreateSalesItemsTaxesTable extends Migration {
         {
             $table->engine = 'InnoDB';
             
-            $table->integer('sale_id');
-            $table->integer('item_id');
+            $table->integer('sale_id')->lenght(10)->unsigned();
+            $table->integer('item_id')->lenght(10)->unsigned();
             $table->string('name',30);;
             $table->integer('line',3);
             $table->decimal('percent',15,2);

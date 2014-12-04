@@ -19,8 +19,8 @@ class CreateReceivingsItemsTable extends Migration {
         {
             $table->engine = 'InnoDB';
             
-            $table->integer('receiving_id');
-            $table->integer('item_id');
+            $table->integer('receiving_id')->length(10)->unsigned();
+            $table->integer('item_id')->length(10)->unsigned();
             $table->string('description',30);
             $table->string('serialnumber',30);
             $table->decimal('quantity_purchased',15,2)->default(0);

@@ -12,12 +12,11 @@ class CreateTableConstraints extends Migration {
 	 */
 	public function up()
 	{
-		//customers table Constraints
+//customers table Constraints
 Schema::table('customers', function($table)
 {
  $table->foreign('person_id')
-       ->references('id')->on('people')
-       ->onDelete('cascade');
+       ->references('id')->on('people');
 });
 
 
@@ -50,7 +49,7 @@ Schema::table('item_kit_items', function($table)
        ->references('id')->on('item_kits')
        ->onDelete('cascade');
 $table->foreign('item_id')
-       ->references('id')->on('item_id')
+       ->references('id')->on('items')
        ->onDelete('cascade');
        
 });
@@ -60,9 +59,6 @@ Schema::table('receivings_items', function($table)
 {
  $table->foreign('item_id')
        ->references('id')->on('items');
-
- $table->foreign('supplier_id')
-       ->references('person_id')->on('item_id');
 
  $table->foreign('receiving_id')
        ->references('id')->on('receivings');     
@@ -77,8 +73,7 @@ Schema::table('sales_items', function($table)
  $table->foreign('sale_id')
        ->references('id')->on('sales'); 
 
-$table->foreign('item_location')
-       ->references('id')->on('stock_locations'); 
+
 });
 
 Schema::table('sales_items_taxes', function($table)
@@ -98,13 +93,7 @@ Schema::table('sales_payments', function($table)
 
 });
 
-Schema::table('sales_payments', function($table)
-{
 
- $table->foreign('sale_id')
-       ->references('id')->on('sales'); 
-
-});
 
 Schema::table('sales_suspended', function($table)
 {
@@ -121,8 +110,6 @@ Schema::table('sales_suspended_items', function($table)
  $table->foreign('sale_id')
        ->references('id')->on('sales'); 
 
-$table->foreign('item_location')
-       ->references('id')->on('stock_locations'); 
 });
 
 
@@ -149,8 +136,6 @@ Schema::table('item_quantities', function($table)
 
  $table->foreign('item_id')
        ->references('id')->on('items'); 
- $table->foreign('location_id')
-       ->references('id')->on('stock_locations'); 
 });
 
 Schema::table('suppliers', function($table)

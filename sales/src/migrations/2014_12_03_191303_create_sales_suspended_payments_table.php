@@ -19,7 +19,7 @@ class CreateSalesSuspendedPaymentsTable extends Migration {
 		{
 		    $table->engine = 'InnoDB';
 		    
-		    $table->integer('sale_id');
+		    $table->integer('sale_id')->lenght(10)->unsigned();
 		    $table->string('payment_type');
 		    $table->decimal('payment_amount',15,2);
 		    $table->timestamps();
