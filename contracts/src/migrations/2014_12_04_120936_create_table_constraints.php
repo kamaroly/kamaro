@@ -24,7 +24,7 @@ Schema::table('customers', function($table)
 Schema::table('inventory', function($table)
 {
  $table->foreign('trans_items')
-       ->references('id')->on('items')
+       ->references('id')->on('items');
  
 });
 
