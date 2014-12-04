@@ -12,14 +12,15 @@ class CreateSuppliersTable extends Migration {
 	 */
 	public function up()
 	{
-	    Schema::dropIfExists('store_config');
+
+	    Schema::dropIfExists('suppliers');
         
-        Schema::create('store_locations', function ($table)
+        Schema::create('suppliers', function ($table)
         {
             $table->engine = 'InnoDB';
-            $table->text('key');
-            $table->text('value');
-            $table->integer('location_id');
+            $table->integer('person_id');
+            $table->string('company_name');
+            $table->string('account_number');
 
             $table->timestamps();
         });
@@ -32,7 +33,7 @@ class CreateSuppliersTable extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::dropIfExists('suppliers');
 	}
 
 }

@@ -21,7 +21,7 @@ class CreateCustomersTable extends Migration {
             $table->integer('person_id');
             $table->string('account_number');
             $table->boolean('taxable')->default(1);
-            $table->boolean('deleted')->default(0);
+
             $table->timestamps();
         });
         

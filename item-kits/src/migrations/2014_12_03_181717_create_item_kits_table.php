@@ -18,11 +18,12 @@ class CreateItemKitsTable extends Migration {
         {
             $table->engine = 'InnoDB';
             
-            $table->integer('item_kit_id');
+            $table->integer('id');
             $table->string('name');
             $table->string('description');
             $table->integer('location_id');
             $table->integer('user_id');
+            
             $table->timestamps();
         });
 		//

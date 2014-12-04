@@ -18,7 +18,7 @@ class CreateItemsTable extends Migration {
         {
             $table->engine = 'InnoDB';
             
-            $table->increments('item_id');
+            $table->increments('id');
             $table->string('name');
             $table->string('category');
             $table->integer('supplier_id')->unsigned();

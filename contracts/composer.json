@@ -1,0 +1,23 @@
+{
+    "name": "kamaro/contracts",
+    "description": "",
+    "authors": [
+        {
+            "name": "kamaro",
+            "email": "kamaroly@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Kamaro\\Contracts\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

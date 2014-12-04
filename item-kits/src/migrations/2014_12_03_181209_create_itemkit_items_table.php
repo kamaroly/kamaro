@@ -22,7 +22,10 @@ class CreateItemkitItemsTable extends Migration {
             $table->integer('item_id');
             $table->decimal('quantity');
             $table->boolean('user_id');
+            
             $table->timestamps();
+            //adding keys
+            $table->primary(array('item_kit_id', 'item_id'));
         });
 	}
 
