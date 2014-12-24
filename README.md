@@ -9,24 +9,22 @@ write a new platform  using Laravel framework which is total powered by API. thi
 
 Documentation for the entire system can be found on the [Kamaro Lambert Website](http://kamaroly.com/support/#/).
 
+## Installation
+
+> [First install rydurham/Sentinel ](https://github.com/rydurham/Sentinel)
+
+
+### Run migrations
+Begin by running migration 
+
+``sh
+php artisan migrate --bench="kamaro/contracts"  
+
+
+
 ### Contributing To KPOS
 
 **All issues and pull requests should be filed on the [Kamaro Point of Sale](http://github.com/kamaroly/kpos3) repository.**
 
 ### LICENCE
 The Kamaro Point of Sale software is licensed under the [MIT license](http://opensource.org/licenses/MIT)
-
-
- 
-php artisan migrate --bench="kamaro/customers"  
-php artisan migrate --bench="kamaro/item-kits"
-php artisan migrate --bench="kamaro/items"  
-php artisan migrate --bench="kamaro/locations"
-php artisan migrate --bench="kamaro/people" 
-php artisan migrate --bench="kamaro/receivings" 
-php artisan migrate --bench="kamaro/reports"  
-php artisan migrate --bench="kamaro/sales" 
-php artisan migrate --bench="kamaro/settings"
-php artisan migrate --bench="kamaro/suppliers"
-php artisan migrate --bench="kamaro/contracts" 
-

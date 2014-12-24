@@ -1,5 +1,7 @@
 @extends('templates::layouts.default')
+
 @section('content')
+@include('customers::partials.mainmenu')
 <section class="panel panel-default">
         <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Horizontal Form</strong></div>
         <div class="panel-body">

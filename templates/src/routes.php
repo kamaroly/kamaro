@@ -1,8 +1,8 @@
 <?php 
-Route::get('/', function(){
+Route::get('/',array('as'=>'home','uses'=> function(){
 	return View::make('templates::partials.home');
 
-});
+}));
 Route::get('templates', function(){
 	return View::make('templates::partials.home');
 
