@@ -4,7 +4,7 @@
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <title>Web Application</title>
+ <title>{{Lang::get('settings::settings.appname')}}</title>
  <meta name="description" content="Responsive Admin Web App">
  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   <!-- Needs images, font... therefore can not be part of main.css -->
