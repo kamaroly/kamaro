@@ -1,5 +1,5 @@
 <?php 
-Route::get('/',array('as'=>'home','uses'=> function(){
+Route::get('/',array('before'=>'Sentinel\hasAccess:admin','as'=>'home','uses'=> function(){
 	return View::make('templates::partials.home');
 
 }));

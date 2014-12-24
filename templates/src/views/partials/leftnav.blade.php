@@ -1,4 +1,4 @@
-     <aside data-ng-include=" &#39;views/nav.html&#39; " id="nav-container" class="nav-container ng-scope nav-fixed nav-vertical bg-dark">        
+     <aside id="nav-container" class="nav-container nav-fixed nav-vertical bg-dark">        
 <div class="nav-wrapper ng-scope">
     <div class="slimScrollDiv" >
         <ul  class="nav"  style="overflow: hidden; width: auto; height: 100%;">
@@ -15,8 +15,9 @@
               <i class="ti-angle-double-right icon-has-ul"></i>
        </li>
         <li>
-            <a href="#pages"><i class="ti-files"></i>
-                <span ="Pages">Pages</span></a>
+            <a href="/customers"><i class="ti-user"></i>
+                <span ="Pages">{{Lang::get('customers::customer.customer')}}</span>
+            </a>
        <i class="ti-angle-double-right icon-has-ul"></i></li>
         <li>
             <a href="#table"><i class="ti-layout-grid4"></i>

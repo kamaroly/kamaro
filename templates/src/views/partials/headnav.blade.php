@@ -3,7 +3,7 @@
     <!-- Logo -->
     <div class="logo bg-dark" >
         <a href="#">
-            <span class="ng-binding">App Name</span>
+            <span class="ng-binding">{{Lang::get('settings::settings.appname')}}</span>
         </a>
     </div>
 
@@ -52,16 +52,17 @@
 
             <li class="dropdown text-normal nav-profile" dropdown="" is-open="status.isopenProfile">
                 <a href="javascript:;" class="dropdown-toggle" dropdown-toggle="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="#" alt="" class="img-circle img30_30">
+
                     <span class="hidden-xs">
-                        <span data-i18n="Lisa Doe">Kamaro</span>
+                        <span>username</span>
                     </span>
                 </a>
             </li>
-            <li class="dropdown langs text-normal ng-scope" dropdown="" is-open="status.isopenLang" data-ng-controller="LangCtrl">
-                <a href="javascript:;" class="dropdown-toggle  dropdown-toggleactive-flag" data-toggle="dropdown">
-                    <div class="flag flags-american"></div>
-                </a>
+            <li class="dropdown langs text-normal ">
+              <a href="/logout">
+                            <i class="ti-export"></i>
+                            <span d>Log Out</span>
+                        </a>
             </li>
         </ul>
     </div>
