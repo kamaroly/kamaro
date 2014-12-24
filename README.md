@@ -17,9 +17,13 @@ Documentation for the entire system can be found on the [Kamaro Lambert Website]
 ### Run migrations
 Begin by running migration 
 
-``sh
-php artisan migrate --bench="kamaro/contracts"  
+``php 
+php artisan migrate --package=rydurham/sentinel
 
+php artisan db:seed --class="SentinelDatabaseSeeder"
+
+php artisan migrate --bench="kamaro/contracts"  
+``
 
 
 ### Contributing To KPOS
